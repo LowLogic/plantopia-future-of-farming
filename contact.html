@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="page-contact">
+<body class="page-contact d-flex flex-column min-vh-100">   
 
     <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
@@ -66,29 +66,31 @@
     </div>
   </nav>
 
-  <main class="container py-5" role="main" aria-label="Kontaktformular">
+  <main class="container py-5" role="main" aria-label="Contact Page">
     <section class="mb-5">
-      <h1 class="text-center mb-4">Kontaktiere uns</h1>
+      <h1 class="text-center mb-4">Contact us</h1>
       <form id="contactForm" class="mx-auto" style="max-width:600px">
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" name="name" required aria-required="true" aria-label="Dein Name" />
+          <input type="text" class="form-control" id="name" name="name" required aria-required="true" aria-label="Your Name" />
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">E-Mail</label>
-          <input type="email" class="form-control" id="email" name="email" required aria-required="true" aria-label="Deine E-Mail-Adresse" />
+          <input type="email" class="form-control" id="email" name="email" required aria-required="true" aria-label="Your E-Mail Address" />
         </div>
         <div class="mb-3">
-          <label for="message" class="form-label">Nachricht</label>
-          <textarea class="form-control" id="message" name="message" rows="4" required aria-required="true" aria-label="Deine Nachricht"></textarea>
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required aria-required="true" aria-label="Your Message"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Absenden</button>
+        <button type="submit" class="btn btn-primary">Send</button>
         <div id="successMessage" class="alert alert-success mt-3 d-none" role="alert">
-          Deine Nachricht wurde erfolgreich gesendet. Danke für dein Feedback!
+          Your message has been sent successfully. Thank you for your feedback!
         </div>
       </form>
     </section>
+   
   </main>
+
 
 </body>
 
