@@ -25,7 +25,7 @@
 
     <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Plantopia</a>
+      <a class="navbar-brand" href="index.html">Plantopia</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -65,6 +65,30 @@
       </div>
     </div>
   </nav>
+
+  <main class="container py-5" role="main" aria-label="Kontaktformular">
+    <section class="mb-5">
+      <h1 class="text-center mb-4">Kontaktiere uns</h1>
+      <form id="contactForm" class="mx-auto" style="max-width:600px">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required aria-required="true" aria-label="Dein Name" />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-Mail</label>
+          <input type="email" class="form-control" id="email" name="email" required aria-required="true" aria-label="Deine E-Mail-Adresse" />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Nachricht</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required aria-required="true" aria-label="Deine Nachricht"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Absenden</button>
+        <div id="successMessage" class="alert alert-success mt-3 d-none" role="alert">
+          Deine Nachricht wurde erfolgreich gesendet. Danke für dein Feedback!
+        </div>
+      </form>
+    </section>
+  </main>
 
 </body>
 

@@ -1,0 +1,13 @@
+.mb-5 {
+  min-height: 150px;
+}
+
+.p-4 {
+    min-height: 250px;
+    padding: 1.5rem;
+    border: 0.25rem solid rgba(0, 0, 0, 0.125);
+}
+
+body {
+    flex: 1;
+}
