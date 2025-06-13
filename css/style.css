@@ -1,3 +1,23 @@
+:root {
+  --color-primary: #2e7d32;
+  --color-secondary: #81c784;
+  --color-accent: #dce775;
+  --color-bg-light: #f5f5f5;
+  --color-text-dark: #212121;
+  --color-text-muted: #757575;
+
+  --font-base: 'Open Sans', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 .mb-5 {
   min-height: 150px;
 }
@@ -10,4 +30,140 @@
 
 body {
     flex: 1;
+}
+
+/* Plantopia Stylesheet - basic styling */
+
+/* Colors */
+:root {
+  --main-color: #2e7d32;
+  --secondary-color: #81c784;
+  --highlight-color: #dce775;
+  --bg-color: #f5f5f5;
+  --text-color: #212121;
+  --text-muted: #757575;
+}
+
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* Headings styles */
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+/* Links style */
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+/* Link hover effect */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container with fixed width and padding */
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Center text helper class */
+.text-center {
+  text-align: center;
+}
+
+/* Margin bottom utility */
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: var(--bg-color);
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+/* Brand styling */
+.navbar-brand {
+  font-weight: bold;
+  color: var(--main-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Nav link styles */
+.nav-link {
+  color: var(--text-color);
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+/* Active nav link */
+.nav-link.active {
+  color: var(--main-color);
+}
+
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+
+.card i {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  display: block;
+  font-size: 2rem;
+}
+
+/* Footer styles */
+footer {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative; /* Standard, kann auch fixed/sticky sein je nach Bedarf */
+  bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+  .card {
+    margin-bottom: 15px;
+  }
+  
+
+  .nav-link {
+    margin-right: 8px;
+  }
 }
